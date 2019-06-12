@@ -23,8 +23,8 @@ import {
 const Podcast = ({ navigation, setPodcastRequest }) => {
   const podcast = navigation.getParam('podcast');
 
-  const handlePlay = () => {
-    setPodcastRequest(podcast);
+  const handlePlay = (episodeId) => {
+    setPodcastRequest(podcast, episodeId);
   };
 
   return (
@@ -48,7 +48,7 @@ const Podcast = ({ navigation, setPodcastRequest }) => {
         data={podcast.tracks}
         keyExtractor={episode => String(episode.id)}
         renderItem={({ item: episode }) => (
-          <Episode>
+          <Episode onPress={() => handlePlay(episode.id)}>
             <Title>{episode.title}</Title>
             <Author>{episode.artist}</Author>
           </Episode>
