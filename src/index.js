@@ -8,9 +8,12 @@ import store from '~/store';
 import Routes from '~/routes';
 import { setNavigator } from './services/navigation';
 
+import Player from '~/components/Player';
+
 const App = () => (
   <Provider store={store}>
     <Routes ref={setNavigator} />
+    <Player />
   </Provider>
 );
 
