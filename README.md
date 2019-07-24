@@ -1,26 +1,22 @@
-# React Native Boilerplate
+# React Native Scopyfy
 
-This boilerplate was built based on the Rocketseat Bootcamp classes.
+A simple podcast/songs react native application
 
-## Features
+<img src="https://i.imgur.com/tHtszCL.png" alt="login screen" width="230" height="400" /> <img src="https://i.imgur.com/HPIbsd5.png" alt="login screen" width="230" height="400" />
 
-- redux
-- redux-saga
-- duck pattern
-- react-navigation
-- axios
-- styled-components
-- react-native-gesture-handler
-- reactotron
-- editorconfig
-- eslint
-- babel-plugin-root-import
+## Setup
 
-## How to use
+You have to install [json-server](https://github.com/typicode/json-server) to simulate the API
 
-```
-git clone https://github.com/lcnogueira/react-native-boilerplate.git
-cd react-native-boilerplate
-yarn install
-react-native run-android (or run-ios)
-```
+* How to use:
+  - Open a new terminal window and run:
+  
+  ```json-server server.json -p 3001 -w -d 500```
+
+Install the dependencies:
+
+`npm i` or `yarn install`
+
+## Running
+
+`react-native run-ios` or `react-native run-android`
